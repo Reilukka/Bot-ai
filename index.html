@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmissão ao Vivo Múltipla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transmissão ao Vivo</h1>
+        <div id="streams">
+            <div class="stream" id="stream1">
+                <video class="liveStream" id="liveStream1" autoplay></video>
+                <button class="startStreaming" onclick="startStreaming('1')">Iniciar Transmissão</button>
+                <button class="stopStreaming" onclick="stopStreaming('1')" disabled>Encerrar Transmissão</button>
+            </div>
+            <div class="stream" id="stream2">
+                <video class="liveStream" id="liveStream2" autoplay></video>
+                <button class="startStreaming" onclick="startStreaming('2')">Iniciar Transmissão</button>
+                <button class="stopStreaming" onclick="stopStreaming('2')" disabled>Encerrar Transmissão</button>
+            </div>
+            <div class="stream" id="stream3">
+                <video class="liveStream" id="liveStream3" autoplay></video>
+                <button class="startStreaming" onclick="startStreaming('3')">Iniciar Transmissão</button>
+                <button class="stopStreaming" onclick="stopStreaming('3')" disabled>Encerrar Transmissão</button>
+            </div>
+            <div class="stream" id="stream4">
+                <video class="liveStream" id="liveStream4" autoplay></video>
+                <button class="startStreaming" onclick="startStreaming('4')">Iniciar Transmissão</button>
+                <button class="stopStreaming" onclick="stopStreaming('4')" disabled>Encerrar Transmissão</button>
+            </div>
+            <div class="stream" id="stream5">
+                <video class="liveStream" id="liveStream5" autoplay></video>
+                <button class="startStreaming" onclick="startStreaming('5')">Iniciar Transmissão</button>
+                <button class="stopStreaming" onclick="stopStreaming('5')" disabled>Encerrar Transmissão</button>
+            </div>
+        </div>
+        <p id="errorMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
